@@ -16,10 +16,8 @@
   
 </p>
 
-<button>
-	<%= link_to 'Edit', edit_idea_path(@idea) %>
-</button>
- 
-<button>
-	<%= link_to 'Back', ideas_path %>
-</button>
+
+	<%= link_to 'Edit', edit_idea_path(@idea), :class => "btn btn-warning" %>
+
+	<%= link_to 'Back', ideas_path, :class => "btn btn-warning" %>
+
