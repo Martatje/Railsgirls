@@ -12,10 +12,14 @@
 
 <p>
   <b>Picture:</b>
-  <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+  <%= image_tag(@idea.picture_url, :width => 100) if @idea.picture.present? %>
   
 </p>
 
-
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+<button>
+	<%= link_to 'Edit', edit_idea_path(@idea) %>
+</button>
+ 
+<button>
+	<%= link_to 'Back', ideas_path %>
+</button>
